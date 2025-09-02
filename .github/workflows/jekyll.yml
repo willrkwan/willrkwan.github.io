@@ -31,7 +31,7 @@ jobs:
       - name: Build site
         run: bundle exec jekyll build --trace --verbose
 
-      # 5. Deploy to GitHub Pages, forcing a new commit each time
+      # 5. Deploy to GitHub Pages, forcing a new commit each time.
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
