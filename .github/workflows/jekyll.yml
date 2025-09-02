@@ -7,11 +7,11 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout the repo
+      # 1. Checkout the repository
       - uses: actions/checkout@v3
 
       # 2. Set up Ruby
@@ -20,13 +20,21 @@ jobs:
         with:
           ruby-version: 3.2
 
-      # 3. Install dependencies
+      # 3. Install Bundler and dependencies
       - name: Install dependencies
         run: |
           gem install bundler
-          bundle config set --local path 'vendor/bundle'
+          bundle config set path 'vendor/bundle'
           bundle install
 
-      # 4. Clean _site (optional, ensures fresh build)
-      - name: Clean site
-        run: rm -rf
+      # 4. Build the Jekyll site
+      - name: Build site
+        run: bundle exec jekyll build --trace
+
+      # 5. Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v6
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          keep_files: true
