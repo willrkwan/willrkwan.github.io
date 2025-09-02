@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout the repository
+      # 1. Checkout repository
       - uses: actions/checkout@v3
 
       # 2. Set up Ruby
@@ -20,18 +20,18 @@ jobs:
         with:
           ruby-version: 3.2
 
-      # 3. Install Bundler and dependencies
+      # 3. Install Bundler and dependencies (including Minimal Mistakes)
       - name: Install dependencies
         run: |
           gem install bundler
           bundle config set path 'vendor/bundle'
-          bundle install
+          bundle install --jobs 4
 
-      # 4. Build the Jekyll site
+      # 4. Build the Jekyll site with verbose output
       - name: Build site
-        run: bundle exec jekyll build --trace
+        run: bundle exec jekyll build --trace --verbose
 
-      # 5. Deploy to GitHub Pages
+      # 5. Deploy to GitHub Pages, forcing a new commit each time
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -39,3 +39,4 @@ jobs:
           publish_dir: ./_site
           publish_branch: gh-pages
           keep_files: true
+          commit_message: "Deploy site: ${{ github.sha }}"

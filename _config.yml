@@ -3,8 +3,8 @@
 # ===========================
 
 # Theme
-remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "dark"  # options: air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "dark"
 
 # Site Settings
 locale: "en-US"
