@@ -2,6 +2,7 @@
 title: "Welcome"
 permalink: /
 layout: home
+show_recent_posts: false
 ---
 
 Hi! I’m Will Kwan.  
