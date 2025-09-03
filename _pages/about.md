@@ -2,6 +2,7 @@
 title: "About"
 permalink: /about/
 layout: posts
+author: "Will Kwan"
 ---
 
 ## About Me
