@@ -1,8 +1,9 @@
 ---
 title: "Welcome"
 permalink: /
-layout: home
+layout: page
 show_recent_posts: false
+
 ---
 
 Hi! I’m Will Kwan.  
