@@ -1,1 +1,16 @@
-<p>Projects include working!</p>
+{% assign entries = site.projects | sort: 'date' | reverse %}
+
+<div class="entries-grid">
+  {% for project in entries %}
+    <div class="grid__item">
+      <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+        <h2 class="archive__item-title">
+          <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+        </h2>
+        {% if project.excerpt %}
+          <p class="archive__item-excerpt">{{ project.excerpt }}</p>
+        {% endif %}
+      </article>
+    </div>
+  {% endfor %}
+</div>
