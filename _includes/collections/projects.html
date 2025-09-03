@@ -1,17 +1,1 @@
-{% assign entries = site.projects | sort: 'date' | reverse %}
-
-<div class="entries-grid">
-  {% for project in entries %}
-    <div class="entry">
-      <a href="{{ project.url | relative_url }}">
-        {% if project.header.teaser %}
-          <img src="{{ project.header.teaser | relative_url }}" alt="{{ project.title }}">
-        {% endif %}
-        <h3>{{ project.title }}</h3>
-      </a>
-      {% if project.excerpt %}
-        <p>{{ project.excerpt }}</p>
-      {% endif %}
-    </div>
-  {% endfor %}
-</div>
+<p>Projects include working!</p>
