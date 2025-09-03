@@ -9,13 +9,13 @@ minimal_mistakes_skin: "dark"
 # Site Settings
 locale: "en-US"
 title: "Will Kwan"
-subtitle: "Portfolio & Projects"
+subtitle: ""
 name: "Will Kwan"
 description: "GIS student & developer exploring mapping, data, and web projects."
 url: "https://willrkwan.github.io"
 baseurl: ""
-masthead_title: " "
-logo: "/assets/images/my-logo.png"  # optional, leave blank if none
+masthead_title: "Will Kwan"
+logo: ""  # optional, leave blank if none
 breadcrumbs: true
 words_per_minute: 200
 enable_copy_code_button: true
@@ -107,7 +107,7 @@ plugins:
 # ===========================
 # SEO / Search
 # ===========================
-search: true
+search: false
 search_provider: lunr
 algolia:
   powered_by: false
