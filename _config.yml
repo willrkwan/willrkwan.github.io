@@ -16,7 +16,7 @@ url: "https://willrkwan.github.io"
 baseurl: ""
 masthead_title: "Will Kwan"
 logo: ""  # optional, leave blank if none
-breadcrumbs: true
+breadcrumbs: false
 words_per_minute: 200
 enable_copy_code_button: true
 
