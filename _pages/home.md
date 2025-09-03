@@ -2,8 +2,6 @@
 title: "About me"
 permalink: /
 layout: single
-show_recent_posts: false
-
 ---
 
 Hi! I’m Will Kwan.  
