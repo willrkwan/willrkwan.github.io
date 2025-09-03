@@ -1,7 +1,7 @@
 ---
 title: "Welcome"
 permalink: /
-layout: page
+layout: home
 show_recent_posts: false
 
 ---
