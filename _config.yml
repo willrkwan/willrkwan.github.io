@@ -19,6 +19,7 @@ logo: ""  # optional, leave blank if none
 breadcrumbs: false
 words_per_minute: 200
 enable_copy_code_button: true
+author_profile: true
 
 copyright: "Will Kwan"
 copyright_url: "https://willrkwan.github.io"
