@@ -2,7 +2,7 @@
 title: "About me"
 permalink: /
 layout: single
-author: Will
+author_profile: true
 ---
 
 Hi! I’m Will Kwan.  
