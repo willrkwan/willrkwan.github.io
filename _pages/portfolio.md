@@ -1,7 +1,8 @@
 ---
 title: "Portfolio"
 permalink: /portfolio/
-layout: collection
-collection: projects
-entries_layout: grid
+layout: single
+author_profile: true
 ---
+
+{% include collections/projects.html %}
