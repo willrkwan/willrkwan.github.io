@@ -5,4 +5,6 @@ layout: home
 ---
 
 Hi! I’m Will Kwan.  
-Explore my projects, blog posts, and more.
+Explore my projects and learn more about me.
+
+[See my Portfolio](/portfolio/) | [About Me](/about/)
