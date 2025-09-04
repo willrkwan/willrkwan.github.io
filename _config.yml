@@ -49,7 +49,7 @@ author:
   avatar: "/assets/images/bio-photo.jpg"  # optional
   bio: "GIS student & developer exploring mapping, data, and web projects."
   location: "Kelowna, British Columbia"
-  email: "willrkwan@gmail.com"
+  # email: "willrkwan@gmail.com"
   # links:
   #   - label: "Email"
   #     icon: "fas fa-fw fa-envelope-square"
