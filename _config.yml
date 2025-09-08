@@ -46,7 +46,7 @@ footer:
 # ===========================
 author:
   name: "Will Kwan"
-  avatar: "{{ site.baseurl }}/assets/images/bio-photo.jpg"  # optional
+  avatar: "/assets/images/bio-photo.jpg"  # optional
   bio: "B.Sc. Environmental Science and Computer Science Student"
   location: "Kelowna, British Columbia"
   # email: "willrkwan@gmail.com"
