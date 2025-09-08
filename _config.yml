@@ -7,19 +7,19 @@ theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "dark"
 
 # Site Settings
-locale: "en-US"
+locale: "en"
 title: "Will Kwan"
 subtitle: ""
 name: "Will Kwan"
-description: "GIS student & developer exploring mapping, data, and web projects."
+description: "B.Sc. Environmental Science and Computer Science Student"
 url: "https://willrkwan.github.io"
 baseurl: ""
 masthead_title: "Will Kwan"
 logo: ""  # optional, leave blank if none
-breadcrumbs: false
+breadcrumbs: false 
 words_per_minute: 200
 enable_copy_code_button: true
-author_profile: true
+author_profile: true 
 
 copyright: "Will Kwan"
 copyright_url: "https://willrkwan.github.io"
