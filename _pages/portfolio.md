@@ -4,4 +4,4 @@ permalink: /portfolio/
 layout: single
 author_profile: true
 ---
-- [Kelowna Walkability](/kelowna_walkability/)
+- [Analyzing Kelowna's Walkability](/kelowna_walkability/)
