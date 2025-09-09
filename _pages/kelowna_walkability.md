@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 ## Interactive Map (Sample Data)
-<!-- Controls outside the map -->
+<!-- Controls inside a box -->
 <div id="controls-box">
   <strong>Choose a layer:</strong><br>
   <label><input type="radio" name="layer" value="walkability" checked> Final Walkability</label><br>
@@ -19,16 +19,8 @@ author_profile: true
 <div id="map" style="height: 600px;"></div>
 
 <style>
-  #map {
-    height: 600px;
-    position: relative; /* Make this container a reference for absolute positioning */
-  }
-
   /* Style the box */
   #controls-box {
-    position: absolute;
-    top: 0px;       /* distance from top of map */
-    right: 100px;     /* distance from right of map */
     width: 200px;           /* Box width */
     padding: 10px;          /* Space inside the box */
     background-color: #f9f9f9;  /* Box background */
