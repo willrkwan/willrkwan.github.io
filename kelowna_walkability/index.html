@@ -284,28 +284,29 @@
 <style>
   /* Style the box */
   #controls-box {
-    width: 200px;           /* Box width */
-    padding: 10px;          /* Space inside the box */
-    background-color: #f9f9f9;  /* Box background */
-    border: 1px solid #ccc;     /* Box border */
-    border-radius: 8px;         /* Rounded corners */
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* Optional shadow */
+    width: 200px;           
+    padding: 10px;          
+    background-color: #f9f9f9;  
+    border: 1px solid #ccc;     
+    border-radius: 8px;         
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3); 
     font-family: Arial, sans-serif;
-    font-size: 14px;        /* Size of text inside box */
-    margin-bottom: 10px;    /* Space below box */
+    font-size: 14px;        
+    margin-bottom: 10px;    
   }
 
-  /* Optional: style labels and inputs */
+  /* Make radio buttons appear beside text */
   #controls-box label {
-    display: block;
+    display: flex;           /* horizontal row */
+    align-items: center;     /* vertical alignment */
     margin-bottom: 5px;
     cursor: pointer;
   }
 
   #controls-box input[type="radio"] {
-    margin-right: 5px;
+    margin-right: 5px;       /* space between button and text */
   }
-</style>
+</style
 
 <!-- Leaflet CSS -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -371,7 +372,7 @@
     });
   });
 </script>
-
+</style>
 
         
       </section>
