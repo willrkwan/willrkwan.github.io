@@ -81,10 +81,34 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Placeholder layers
-var walkability = L.geoJSON({/*...*/}, {style:{color:"blue", fillOpacity:0.4}}).addTo(map);
-var density = L.geoJSON({/*...*/}, {style:{color:"green", fillOpacity:0.4}});
-var services = L.geoJSON({/*...*/}, {style:{color:"orange", fillOpacity:0.4}});
-var slope = L.geoJSON({/*...*/}, {style:{color:"red", fillOpacity:0.4}});
+var walkability = L.geoJSON({
+  "type": "FeatureCollection",
+  "features": [
+    { "type": "Feature", "properties": {"name": "Downtown"}, "geometry": {"type": "Polygon", "coordinates": [[[-119.5,49.88],[-119.48,49.88],[-119.48,49.89],[-119.5,49.89],[-119.5,49.88]]]}}
+  ]
+}, {style:{color:"blue", fillOpacity:0.4}}).addTo(map);
+
+var density = L.geoJSON({
+  "type": "FeatureCollection",
+  "features": [
+    { "type": "Feature", "properties": {"name": "Midtown"}, "geometry": {"type": "Polygon", "coordinates": [[[-119.49,49.885],[-119.47,49.885],[-119.47,49.895],[-119.49,49.895],[-119.49,49.885]]]}}
+  ]
+}, {style:{color:"green", fillOpacity:0.4}});
+
+var services = L.geoJSON({
+  "type": "FeatureCollection",
+  "features": [
+    { "type": "Feature", "properties": {"name": "Pandosy"}, "geometry": {"type": "Polygon", "coordinates": [[[-119.495,49.882],[-119.475,49.882],[-119.475,49.892],[-119.495,49.892],[-119.495,49.882]]]}}
+  ]
+}, {style:{color:"orange", fillOpacity:0.4}});
+
+var slope = L.geoJSON({
+  "type": "FeatureCollection",
+  "features": [
+    { "type": "Feature", "properties": {"name": "Upper Mission"}, "geometry": {"type": "Polygon", "coordinates": [[[-119.51,49.88],[-119.49,49.88],[-119.49,49.89],[-119.51,49.89],[-119.51,49.88]]]}}
+  ]
+}, {style:{color:"red", fillOpacity:0.4}});
+
 
 var layers = { walkability, density, services, slope };
 
