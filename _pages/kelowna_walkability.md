@@ -8,59 +8,65 @@ author_profile: true
 Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text 
 
 ## Interactive Map (Sample Data)
-<!-- Controls inside a box -->
-<div id="controls-box">
-  <strong>Choose a layer:<br></strong><br>
-  <label><input type="radio" name="layer" value="walkability" checked> Final Walkability</label>
-  <label><input type="radio" name="layer" value="density"> Population Density</label>
-  <label><input type="radio" name="layer" value="services"> Services</label>
-  <label><input type="radio" name="layer" value="slope"> Slope</label>
+
+<!-- Container for two columns -->
+<div id="map-container">
+  <!-- Left column: legend / controls -->
+  <div id="controls-box">
+    <strong>Choose a layer:</strong>
+    <label><input type="radio" name="layer" value="walkability" checked> Final Walkability</label>
+    <label><input type="radio" name="layer" value="density"> Population Density</label>
+    <label><input type="radio" name="layer" value="services"> Services</label>
+    <label><input type="radio" name="layer" value="slope"> Slope</label>
+  </div>
+
+  <!-- Right column: map -->
+  <div id="map"></div>
 </div>
 
-<!-- Map container -->
-<div id="map" style="height: 600px;"></div>
-
 <style>
-  #map {
-    border-radius: 8px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-  }
+/* Two-column container */
+#map-container {
+  display: flex;
+  flex-wrap: wrap; /* stacks columns on small screens */
+  gap: 20px;
+}
 
-  /* Style the box */
-  #controls-box {
-    width: 200px;           
-    padding: 10px;          
-    background-color: #f9f9f9;  
-    border: 1px solid #ccc;     
-    border-radius: 8px;         
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3); 
-    font-family: Arial, sans-serif;
-    color: #333333;
-    font-size: 14px;        
-    margin-bottom: 10px;    
-  }
+/* Controls box (left column) */
+#controls-box {
+  flex: 0 0 200px; /* fixed width */
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  font-family: Arial, sans-serif;
+  color: #333333;
+  font-size: 14px;
+}
 
-  /* Change all radio button text colors */
-  #controls-box label {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0px;
-    cursor: pointer;
-    color: darkgrey; /* This changes the radio button text color */
-  }
+/* Radio button labels */
+#controls-box label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px; /* vertical gap between options */
+  cursor: pointer;
+  color: darkgrey;
+}
 
+/* Space between radio button and text */
+#controls-box input[type="radio"] {
+  margin-right: 8px;
+}
 
-  /* Make radio buttons appear beside text */
-  #controls-box label {
-    display: flex;           /* horizontal row */
-    align-items: center;     /* vertical alignment */
-    margin-bottom: 5px;
-    cursor: pointer;
-  }
-
-  #controls-box input[type="radio"] {
-    margin-right: 5px;       /* space between button and text */
-  }
+/* Map (right column) */
+#map {
+  flex: 1 1 0;      /* take remaining space */
+  min-width: 300px;  /* don't shrink too small */
+  height: 600px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
 </style>
 
 <!-- Leaflet CSS -->
