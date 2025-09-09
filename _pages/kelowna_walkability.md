@@ -42,7 +42,7 @@ author_profile: true
   #controls-box label {
     display: flex;
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     cursor: pointer;
     color: darkgrey; /* This changes the radio button text color */
   }
