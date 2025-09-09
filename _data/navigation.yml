@@ -3,3 +3,5 @@ main:
     url: /portfolio/
   - title: "About"
     url: /
+  - title: "Kelowna Walkability"
+    url: /kelowna_walkability/
