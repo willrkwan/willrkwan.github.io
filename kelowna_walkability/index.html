@@ -270,7 +270,7 @@
         
         <h2 id="interactive-map-sample-data">Interactive Map (Sample Data)</h2>
 <!-- Controls outside the map -->
-<div id="controls" style="margin-bottom: 10px;">
+<div id="controls-box">
   <strong>Choose a layer:</strong><br />
   <label><input type="radio" name="layer" value="walkability" checked="" /> Final Walkability</label><br />
   <label><input type="radio" name="layer" value="density" /> Population Density</label><br />
@@ -280,6 +280,32 @@
 
 <!-- Map container -->
 <div id="map" style="height: 600px;"></div>
+
+<style>
+  /* Style the box */
+  #controls-box {
+    width: 200px;           /* Box width */
+    padding: 10px;          /* Space inside the box */
+    background-color: #f9f9f9;  /* Box background */
+    border: 1px solid #ccc;     /* Box border */
+    border-radius: 8px;         /* Rounded corners */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* Optional shadow */
+    font-family: Arial, sans-serif;
+    font-size: 14px;        /* Size of text inside box */
+    margin-bottom: 10px;    /* Space below box */
+  }
+
+  /* Optional: style labels and inputs */
+  #controls-box label {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+
+  #controls-box input[type="radio"] {
+    margin-right: 5px;
+  }
+</style>
 
 <!-- Leaflet CSS -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
