@@ -5,6 +5,8 @@ layout: single
 author_profile: true
 ---
 
+Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text 
+
 ## Interactive Map (Sample Data)
 <!-- Controls inside a box -->
 <div id="controls-box">
