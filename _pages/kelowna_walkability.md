@@ -24,6 +24,21 @@ Sample text Sample text Sample text Sample text Sample text Sample text Sample t
   <div id="map"></div>
 </div>
 
+<!-- Container for two columns -->
+<div id="map-container">
+  <!-- Left column: map -->
+  <div id="map"></div>
+
+  <!-- Right column: legend / controls -->
+  <div id="controls-box">
+    <strong>Choose a layer:</strong>
+    <label><input type="radio" name="layer" value="walkability" checked> Final Walkability</label>
+    <label><input type="radio" name="layer" value="density"> Population Density</label>
+    <label><input type="radio" name="layer" value="services"> Services</label>
+    <label><input type="radio" name="layer" value="slope"> Slope</label>
+  </div>
+</div>
+
 <style>
 /* Two-column container */
 #map-container {
@@ -32,9 +47,19 @@ Sample text Sample text Sample text Sample text Sample text Sample text Sample t
   gap: 20px;
 }
 
-/* Controls box (left column) */
+/* Map (left column) */
+#map {
+  flex: 1 1 0;      /* take remaining space */
+  min-width: 300px;  /* don't shrink too small */
+  height: 600px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Controls box (right column) */
 #controls-box {
   flex: 0 0 200px; /* fixed width */
+  align-self: flex-start; /* prevents stretching */
   padding: 10px;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
@@ -44,6 +69,7 @@ Sample text Sample text Sample text Sample text Sample text Sample text Sample t
   color: #333333;
   font-size: 14px;
 }
+
 
 /* Radio button labels */
 #controls-box label {
@@ -58,16 +84,8 @@ Sample text Sample text Sample text Sample text Sample text Sample text Sample t
 #controls-box input[type="radio"] {
   margin-right: 8px;
 }
-
-/* Map (right column) */
-#map {
-  flex: 1 1 0;      /* take remaining space */
-  min-width: 300px;  /* don't shrink too small */
-  height: 600px;
-  border-radius: 8px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-}
 </style>
+
 
 <!-- Leaflet CSS -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
