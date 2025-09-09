@@ -50,16 +50,16 @@ author:
   bio: "B.Sc. Environmental Science and Computer Science Student"
   location: "Kelowna, British Columbia"
   # email: "willrkwan@gmail.com"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:willrkwan@gmail.com"
+   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/willrkwan"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/willrkwan"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:willrkwan@gmail.com"
 
 # ===========================
 # Pages & Posts
