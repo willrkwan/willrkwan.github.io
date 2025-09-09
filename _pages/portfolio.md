@@ -4,4 +4,4 @@ permalink: /portfolio/
 layout: single
 author_profile: true
 ---
-- [Kelowna Walkability]({{ site.baseurl }}/kelowna_walkability.md)
+- [Kelowna Walkability](/kelowna_walkability/)
