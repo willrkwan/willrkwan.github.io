@@ -19,6 +19,11 @@ author_profile: true
 <div id="map" style="height: 600px;"></div>
 
 <style>
+  #map {
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  }
+
   /* Style the box */
   #controls-box {
     width: 200px;           
@@ -28,6 +33,7 @@ author_profile: true
     border-radius: 8px;         
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3); 
     font-family: Arial, sans-serif;
+    color: #333333;
     font-size: 14px;        
     margin-bottom: 10px;    
   }
@@ -43,7 +49,7 @@ author_profile: true
   #controls-box input[type="radio"] {
     margin-right: 5px;       /* space between button and text */
   }
-</style
+</style>
 
 <!-- Leaflet CSS -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
