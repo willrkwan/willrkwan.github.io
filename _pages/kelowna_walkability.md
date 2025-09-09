@@ -27,8 +27,8 @@ author_profile: true
   /* Style the box */
   #controls-box {
     position: absolute;
-    top: 10px;       /* distance from top of map */
-    right: 10px;     /* distance from right of map */
+    top: 0px;       /* distance from top of map */
+    right: 100px;     /* distance from right of map */
     width: 200px;           /* Box width */
     padding: 10px;          /* Space inside the box */
     background-color: #f9f9f9;  /* Box background */
