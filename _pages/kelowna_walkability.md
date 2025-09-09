@@ -10,7 +10,7 @@ Sample text Sample text Sample text Sample text Sample text Sample text Sample t
 ## Interactive Map (Sample Data)
 <!-- Controls inside a box -->
 <div id="controls-box">
-  <strong>Choose a layer:</strong><br>
+  <strong>Choose a layer:<br></strong><br>
   <label><input type="radio" name="layer" value="walkability" checked> Final Walkability</label>
   <label><input type="radio" name="layer" value="density"> Population Density</label>
   <label><input type="radio" name="layer" value="services"> Services</label>
