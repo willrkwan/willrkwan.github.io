@@ -19,8 +19,16 @@ author_profile: true
 <div id="map" style="height: 600px;"></div>
 
 <style>
+  #map {
+    height: 600px;
+    position: relative; /* Make this container a reference for absolute positioning */
+  }
+
   /* Style the box */
   #controls-box {
+    position: absolute;
+    top: 10px;       /* distance from top of map */
+    right: 10px;     /* distance from right of map */
     width: 200px;           /* Box width */
     padding: 10px;          /* Space inside the box */
     background-color: #f9f9f9;  /* Box background */
