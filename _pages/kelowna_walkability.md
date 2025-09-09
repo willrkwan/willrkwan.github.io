@@ -50,6 +50,7 @@ Sample text Sample text Sample text Sample text Sample text Sample text Sample t
   border-radius: 8px;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
   font-family: Arial, sans-serif;
+  color: #444444;
   font-size: 14px;
 }
 
@@ -58,6 +59,7 @@ Sample text Sample text Sample text Sample text Sample text Sample text Sample t
   display: flex;
   align-items: center;
   margin-bottom: 8px;
+  color: #444444;
   cursor: pointer;
 }
 
