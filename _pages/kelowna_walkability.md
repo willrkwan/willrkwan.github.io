@@ -4,9 +4,6 @@ permalink: /kelowna_walkability/
 layout: single
 author_profile: true
 ---
-
-Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text 
-
 ## Interactive Map (Placeholder Data)
 
 <div id="map-container">
