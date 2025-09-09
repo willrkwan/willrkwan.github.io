@@ -38,6 +38,16 @@ author_profile: true
     margin-bottom: 10px;    
   }
 
+  /* Change all radio button text colors */
+  #controls-box label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: darkgrey; /* This changes the radio button text color */
+  }
+
+
   /* Make radio buttons appear beside text */
   #controls-box label {
     display: flex;           /* horizontal row */
