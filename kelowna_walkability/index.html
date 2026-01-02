@@ -268,186 +268,39 @@
 
       <section class="page__content" itemprop="text">
         
-        <h2 id="overview">Overview</h2>
+        <h2 id="project-overview">Project Overview</h2>
 
-<p>Using GIS and 1,569 data points across 175 neighborhoods, this project reveals where Kelowna excels—and struggles—with pedestrian accessibility. The analysis developed a comprehensive walkability index (0-100 scale) by integrating five key indicators: proximity to amenities, population density, land use diversity, street connectivity, and terrain characteristics.</p>
+<p>Analyzed pedestrian accessibility accross 175 Kelowna neighborhoods using 1,569 amentities to create a walkability index (0-100). The project integrates five key indicators: proximity to amentities, population and amenitiy density, land use diversity, street connectivity, and terrain characteristics.</p>
 
 <p><strong>Key Findings:</strong></p>
 <ul>
-  <li>Walkability scores range from <strong>7.65 to 84.49</strong> — an 11x difference across the city</li>
-  <li><strong>Downtown core</strong> leads with a score of 84.49, demonstrating excellent pedestrian infrastructure</li>
-  <li><strong>Suburban areas</strong> like Wilden score as low as 7.65, revealing car-dependent development patterns</li>
-  <li>Mean walkability: 49.03 (below midpoint, indicating room for improvement)</li>
+  <li>Walkability scores range from 7.65 to 84.49, an 11x difference across the city</li>
+  <li>High Walkability Areas: Downtown, Pandosy Village, Midtown. These areas have excellent pedestrian infrastructure and amenity access.</li>
+  <li>Low Walkability Areas: Suburban sprawl (Wilden, Upper Mission) score low, revealing car-dependence, low connectivity, and low land use diversity.</li>
+  <li>Mean Score: 49.03, SD: 19.85, indicating uneven development patterns.</li>
 </ul>
 
-<p><strong>Data Scale:</strong></p>
+<p><strong>Methodology Highlights</strong></p>
 <ul>
-  <li>1,569 amenities analyzed</li>
-  <li>175 dissemination areas</li>
-  <li>27 amenity subcategories</li>
-  <li>9 major categories</li>
+  <li>Weighted five indicators to reflect pedestrian behavior and urban design impact, based on evidence in academic literature</li>
+  <li>Used logistic decay functions for walking distance modelling</li>
+  <li>Applied Shannon’s Entropy Index for land use diversity</li>
+  <li>Incorporated slope and aesthetic features to account for walkability comfort</li>
+  <li>Utilized Python for amenity data collection and processing (pandas, Google Geocoding API)</li>
 </ul>
 
-<p><strong>Top Performers:</strong></p>
+<p><strong>Deliverables</strong></p>
 <ul>
-  <li>Downtown: 84.49</li>
-  <li>Pandosy Village: 83.52</li>
-  <li>Midtown: 78.34</li>
+  <li>Walkability index maps and neighbourhood rankings</li>
+  <li>Full project report with methodology, figures, and statistical analysis</li>
+  <li>Insights for sustainable urban planning and pedestrian infrastructure investments</li>
 </ul>
 
-<p><strong>Challenges:</strong></p>
-<ul>
-  <li>High variance (SD: 19.85)</li>
-  <li>Suburban sprawl impacts</li>
-  <li>Car-dependent design</li>
-</ul>
-
-<hr />
-
-<h2 id="methodology">Methodology</h2>
-
-<p>The walkability index integrates five evidence-based indicators, weighted according to their impact on pedestrian behavior:</p>
-
-<h3 id="1-proximity-35-weight">1. Proximity (35% weight)</h3>
-<ul>
-  <li><strong>Pedestrian Path Access</strong> (10%): Distance to nearest walking infrastructure using a 5-minute walk threshold (276m)</li>
-  <li><strong>Amenity Access</strong> (25%): Weighted distance to essential services across 27 categories using a 15-minute walk threshold (876m)</li>
-  <li>Uses logistic decay functions to model realistic walking behavior</li>
-</ul>
-
-<h3 id="2-density-1625-weight">2. Density (16.25% weight)</h3>
-<ul>
-  <li><strong>Population Density</strong> (8.125%): Residents per dissemination area</li>
-  <li><strong>Amenity Density</strong> (8.125%): Number of services per area</li>
-  <li>Higher density supports viable pedestrian-oriented development</li>
-</ul>
-
-<h3 id="3-diversity-1625-weight">3. Diversity (16.25% weight)</h3>
-<ul>
-  <li><strong>Land Use Mix</strong>: Shannon’s Entropy Index measuring variety of amenity categories within 15 hectares</li>
-  <li>Higher diversity = more walkable, mixed-use neighborhoods</li>
-  <li>Low scores indicate single-use, car-dependent areas</li>
-</ul>
-
-<h3 id="4-connectedness-1625-weight">4. Connectedness (16.25% weight)</h3>
-<ul>
-  <li><strong>Road Density</strong> (8.125%): Total road length per area</li>
-  <li><strong>Intersection Density</strong> (8.125%): Number of intersections per area</li>
-  <li>More connected street networks provide direct walking routes</li>
-</ul>
-
-<h3 id="5-attractiveness-1625-weight">5. Attractiveness (16.25% weight)</h3>
-<ul>
-  <li><strong>Slope Analysis</strong> (11.25%): Terrain difficulty using exponential decay (steeper = lower score)</li>
-  <li><strong>Aesthetic Features</strong> (5%): Tree and streetlight density as proxies for comfort and safety</li>
-</ul>
-
-<p>All indicators are normalized to a 0-100 scale, then weighted and aggregated into the final walkability index.</p>
-
-<hr />
-
-<h2 id="key-findings">Key Findings</h2>
-
-<h3 id="the-walkability-gap">The Walkability Gap</h3>
-
-<p>Kelowna exhibits an <strong>11-fold difference</strong> between its most and least walkable neighborhoods, revealing stark contrasts in urban design:</p>
-
-<p><strong>🏆 Most Walkable: Downtown Core (DA 59350057) — Score: 84.49</strong></p>
-<ul>
-  <li>Excellent proximity to 1,569 amenities across all categories</li>
-  <li>High intersection density enabling direct pedestrian routes</li>
-  <li>Flat terrain ideal for walking</li>
-  <li>Well-connected pedestrian infrastructure</li>
-  <li>Challenge: Lower relative population density despite high walkability</li>
-</ul>
-
-<p><strong>🚗 Least Walkable: Wilden (DA 59350022) — Score: 7.65</strong></p>
-<ul>
-  <li>Poor amenity access requiring vehicle travel</li>
-  <li>Low land use diversity (single-use residential)</li>
-  <li>Low population density typical of suburban sprawl</li>
-  <li>Limited street connectivity</li>
-  <li>Classic car-dependent development pattern</li>
-</ul>
-
-<h3 id="spatial-patterns">Spatial Patterns</h3>
-
-<p>High walkability concentrates in:</p>
-<ul>
-  <li><strong>Urban cores</strong>: Downtown, Pandosy Village, Midtown, Rutland, Capri-Landmark</li>
-  <li><strong>Major corridors</strong>: Highway 97, Glenmore Road, Lakeshore Road</li>
-  <li><strong>Transit-oriented areas</strong>: High-frequency bus routes</li>
-</ul>
-
-<p>Low walkability dominates:</p>
-<ul>
-  <li><strong>Suburban developments</strong>: Upper Mission, Wilden</li>
-  <li><strong>Agricultural zones</strong>: Periphery areas</li>
-  <li><strong>Single-use residential</strong>: Car-oriented subdivisions</li>
-</ul>
-
-<h3 id="statistical-summary">Statistical Summary</h3>
-
-<ul>
-  <li><strong>Mean</strong>: 49.03/100 (below midpoint — room for citywide improvement)</li>
-  <li><strong>Standard Deviation</strong>: 19.85 (high variance indicating uneven development)</li>
-  <li><strong>Range</strong>: 7.65 to 84.49</li>
-  <li><strong>Top Quartile</strong>: ≥64.22 (concentrated in established urban areas)</li>
-  <li><strong>Bottom Quartile</strong>: ≤34.47 (predominantly suburban sprawl)</li>
-</ul>
-
-<hr />
-
-<h2 id="data-sources--tools">Data Sources &amp; Tools</h2>
-
-<p><strong>Spatial Data:</strong></p>
-<ul>
-  <li>Statistics Canada: Dissemination area boundaries, population data</li>
-  <li>Google Maps API: 1,569 amenity locations (geocoded)</li>
-  <li>City of Kelowna Open Data: Pedestrian network, parks, schools, trees, streetlights, DEM</li>
-  <li>BC Transit: Transit stop locations</li>
-  <li>BC Freshwater Atlas: Okanagan Lake boundary</li>
-</ul>
-
-<p><strong>Analysis Tools:</strong></p>
-<ul>
-  <li>ArcGIS Pro: Spatial analysis, geoprocessing</li>
-  <li>Python: Data processing (pandas, Google Geocoding API)</li>
-</ul>
-
-<p><strong>Projection:</strong> NAD 1983 UTM Zone 11</p>
-
-<hr />
-
-<h2 id="downloads--additional-resources">Downloads &amp; Additional Resources</h2>
-
+<p><strong>Full Report</strong></p>
 <ul>
   <li><a href="/assets/documents/kelowna-walkability/Report.pdf">Full Report (PDF)</a></li>
   <li><a href="/assets/documents/kelowna-walkability/Figures1-11.pdf">All Figures (PDF)</a></li>
   <li><a href="/assets/documents/kelowna-walkability/Table3.pdf">Complete Rankings (PDF)</a></li>
-</ul>
-
-<p><strong>Report Contents:</strong></p>
-<ul>
-  <li>Complete methodology and literature review</li>
-  <li>Detailed results and statistical analysis</li>
-  <li>All 11 figures in high resolution</li>
-  <li>Discussion of limitations and future improvements</li>
-  <li>Full reference list</li>
-</ul>
-
-<hr />
-
-<h2 id="project-context">Project Context</h2>
-
-<p>This analysis was completed as the term project for GISC 480: Practical Applications in GIS at UBC Okanagan (April 2025). The project aligns with Kelowna’s 2040 Official Community Plan goals to transition from car-centric development toward more sustainable, walkable neighborhoods that reduce emissions and improve quality of life.</p>
-
-<p><strong>Implications:</strong></p>
-<ul>
-  <li>Identifies priority areas for walkability investments</li>
-  <li>Supports evidence-based urban planning decisions</li>
-  <li>Provides baseline for tracking progress toward 2040 goals</li>
-  <li>Demonstrates GIS applications in sustainable urban development</li>
 </ul>
 
 
