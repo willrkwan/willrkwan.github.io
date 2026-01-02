@@ -9,6 +9,11 @@ author_profile: true
 
 Analyzed pedestrian accessibility accross 175 Kelowna neighborhoods using 1,569 amentities to create a walkability index (0-100). The project integrates five key indicators: proximity to amentities, population and amenitiy density, land use diversity, street connectivity, and terrain characteristics.
 
+**Full Report**
+- [Full Report (PDF)](/assets/documents/kelowna-walkability/Report.pdf)
+- [All Figures (PDF)](/assets/documents/kelowna-walkability/Figures1-11.pdf)
+- [Complete Rankings (PDF)](/assets/documents/kelowna-walkability/Table3.pdf)
+
 **Key Findings:**
 - Walkability scores range from 7.65 to 84.49, an 11x difference across the city
 - High Walkability Areas: Downtown, Pandosy Village, Midtown. These areas have excellent pedestrian infrastructure and amenity access.
@@ -27,8 +32,4 @@ Analyzed pedestrian accessibility accross 175 Kelowna neighborhoods using 1,569 
 - Full project report with methodology, figures, and statistical analysis
 - Insights for sustainable urban planning and pedestrian infrastructure investments
 
-**Full Report**
-- [Full Report (PDF)](/assets/documents/kelowna-walkability/Report.pdf)
-- [All Figures (PDF)](/assets/documents/kelowna-walkability/Figures1-11.pdf)
-- [Complete Rankings (PDF)](/assets/documents/kelowna-walkability/Table3.pdf)
 
