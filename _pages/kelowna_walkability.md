@@ -15,160 +15,21 @@ Using GIS and 1,569 data points across 175 neighborhoods, this project reveals w
 - **Suburban areas** like Wilden score as low as 7.65, revealing car-dependent development patterns
 - Mean walkability: 49.03 (below midpoint, indicating room for improvement)
 
-<div style="display: flex; gap: 20px; margin: 20px 0; flex-wrap: wrap;">
-  <div style="flex: 1; min-width: 200px; padding: 15px; background-color: #f0f8ff; border-left: 4px solid #4a90e2; border-radius: 4px;">
-    <h4 style="margin-top: 0;">Data Scale</h4>
-    <ul style="margin-bottom: 0;">
-      <li>1,569 amenities analyzed</li>
-      <li>175 dissemination areas</li>
-      <li>27 amenity subcategories</li>
-      <li>9 major categories</li>
-    </ul>
-  </div>
-  <div style="flex: 1; min-width: 200px; padding: 15px; background-color: #f0fff0; border-left: 4px solid #52c41a; border-radius: 4px;">
-    <h4 style="margin-top: 0;">Top Performers</h4>
-    <ul style="margin-bottom: 0;">
-      <li>Downtown: 84.49</li>
-      <li>Pandosy Village: 83.52</li>
-      <li>Midtown: 78.34</li>
-    </ul>
-  </div>
-  <div style="flex: 1; min-width: 200px; padding: 15px; background-color: #fff5f5; border-left: 4px solid #ff4d4f; border-radius: 4px;">
-    <h4 style="margin-top: 0;">Challenges</h4>
-    <ul style="margin-bottom: 0;">
-      <li>High variance (SD: 19.85)</li>
-      <li>Suburban sprawl impacts</li>
-      <li>Car-dependent design</li>
-    </ul>
-  </div>
-</div>
+**Data Scale:**
+- 1,569 amenities analyzed
+- 175 dissemination areas
+- 27 amenity subcategories
+- 9 major categories
 
----
+**Top Performers:**
+- Downtown: 84.49
+- Pandosy Village: 83.52
+- Midtown: 78.34
 
-## Interactive Walkability Map
-
-Explore Kelowna's walkability across different dimensions. Use the layer controls to view the final walkability index or examine individual components of the analysis.
-
-<div id="map-container">
-  <!-- Left column: map -->
-  <div id="map"></div>
-
-  <!-- Right column: controls -->
-  <div id="controls-box">
-    <strong>Choose a layer:</strong>
-    <label><input type="radio" name="layer" value="walkability" checked> Final Walkability Index</label>
-    <label><input type="radio" name="layer" value="proximity"> Proximity to Amenities</label>
-    <label><input type="radio" name="layer" value="density"> Density (Population + Amenities)</label>
-    <label><input type="radio" name="layer" value="diversity"> Diversity (Land Use Mix)</label>
-    <label><input type="radio" name="layer" value="connectedness"> Connectedness (Roads + Intersections)</label>
-    <label><input type="radio" name="layer" value="slope"> Attractiveness (Slope + Aesthetics)</label>
-  </div>
-</div>
-
-<style>
-/* Two-column container */
-#map-container {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-/* Map (left column) */
-#map {
-  flex: 1 1 0;
-  min-width: 300px;
-  height: 600px;
-  border-radius: 8px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-}
-
-/* Controls box (right column) */
-#controls-box {
-  flex: 0 0 200px; /* fixed width */
-  align-self: flex-start; /* only as tall as content */
-  padding: 10px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-  font-family: Arial, sans-serif;
-  color: #444444;
-  font-size: 14px;
-}
-
-/* Radio button labels */
-#controls-box label {
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px;
-  color: #444444;
-  cursor: pointer;
-}
-
-/* Space between radio button and text */
-#controls-box input[type="radio"] {
-  margin-right: 8px;
-}
-</style>
-
-<!-- Leaflet CSS & JS -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
-<script>
-var map = L.map('map').setView([49.8879, -119.4960], 13);
-
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; OpenStreetMap contributors'
-}).addTo(map);
-
-// Placeholder layers
-var walkability = L.geoJSON({
-  "type": "FeatureCollection",
-  "features": [
-    { "type": "Feature", "properties": {"name": "Downtown"}, "geometry": {"type": "Polygon", "coordinates": [[[-119.5,49.88],[-119.48,49.88],[-119.48,49.89],[-119.5,49.89],[-119.5,49.88]]]}}
-  ]
-}, {style:{color:"blue", fillOpacity:0.4}}).addTo(map);
-
-var density = L.geoJSON({
-  "type": "FeatureCollection",
-  "features": [
-    { "type": "Feature", "properties": {"name": "Midtown"}, "geometry": {"type": "Polygon", "coordinates": [[[-119.49,49.885],[-119.47,49.885],[-119.47,49.895],[-119.49,49.895],[-119.49,49.885]]]}}
-  ]
-}, {style:{color:"green", fillOpacity:0.4}});
-
-var services = L.geoJSON({
-  "type": "FeatureCollection",
-  "features": [
-    { "type": "Feature", "properties": {"name": "Pandosy"}, "geometry": {"type": "Polygon", "coordinates": [[[-119.495,49.882],[-119.475,49.882],[-119.475,49.892],[-119.495,49.892],[-119.495,49.882]]]}}
-  ]
-}, {style:{color:"orange", fillOpacity:0.4}});
-
-var slope = L.geoJSON({
-  "type": "FeatureCollection",
-  "features": [
-    { "type": "Feature", "properties": {"name": "Upper Mission"}, "geometry": {"type": "Polygon", "coordinates": [[[-119.51,49.88],[-119.49,49.88],[-119.49,49.89],[-119.51,49.89],[-119.51,49.88]]]}}
-  ]
-}, {style:{color:"red", fillOpacity:0.4}});
-
-
-var connectedness = L.geoJSON({
-  "type": "FeatureCollection",
-  "features": [
-    { "type": "Feature", "properties": {"name": "Rutland"}, "geometry": {"type": "Polygon", "coordinates": [[[-119.45,49.89],[-119.43,49.89],[-119.43,49.90],[-119.45,49.90],[-119.45,49.89]]]}}
-  ]
-}, {style:{color:"purple", fillOpacity:0.4}});
-
-var layers = { walkability, proximity: services, density, diversity: services, connectedness, slope };
-
-// Show only selected layer
-document.querySelectorAll('input[name="layer"]').forEach(radio => {
-  radio.addEventListener('change', function() {
-    for (let key in layers) map.removeLayer(layers[key]);
-    map.addLayer(layers[this.value]);
-  });
-});
-</script>
+**Challenges:**
+- High variance (SD: 19.85)
+- Suburban sprawl impacts
+- Car-dependent design
 
 ---
 
@@ -258,7 +119,6 @@ Low walkability dominates:
 **Analysis Tools:**
 - ArcGIS Pro: Spatial analysis, geoprocessing
 - Python: Data processing (pandas, Google Geocoding API)
-- Leaflet.js: Interactive web mapping
 
 **Projection:** NAD 1983 UTM Zone 11
 
@@ -266,11 +126,9 @@ Low walkability dominates:
 
 ## Downloads & Additional Resources
 
-<div style="margin: 20px 0;">
-  <a href="/assets/documents/kelowna-walkability/Report.pdf" style="display: inline-block; padding: 10px 20px; background-color: #4a90e2; color: white; text-decoration: none; border-radius: 4px; margin-right: 10px; margin-bottom: 10px;">📄 Full Report (PDF)</a>
-  <a href="/assets/documents/kelowna-walkability/Figures1-11.pdf" style="display: inline-block; padding: 10px 20px; background-color: #52c41a; color: white; text-decoration: none; border-radius: 4px; margin-right: 10px; margin-bottom: 10px;">📊 All Figures (PDF)</a>
-  <a href="/assets/documents/kelowna-walkability/Table3.pdf" style="display: inline-block; padding: 10px 20px; background-color: #fa8c16; color: white; text-decoration: none; border-radius: 4px; margin-bottom: 10px;">📋 Complete Rankings (PDF)</a>
-</div>
+- [Full Report (PDF)](/assets/documents/kelowna-walkability/Report.pdf)
+- [All Figures (PDF)](/assets/documents/kelowna-walkability/Figures1-11.pdf)
+- [Complete Rankings (PDF)](/assets/documents/kelowna-walkability/Table3.pdf)
 
 **Report Contents:**
 - Complete methodology and literature review

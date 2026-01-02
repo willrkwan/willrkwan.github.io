@@ -8,7 +8,7 @@ author_profile: true
 ## Projects
 
 ### [Analyzing Kelowna's Walkability](/kelowna_walkability/)
-Developed a comprehensive walkability index for Kelowna, BC using multi-criteria spatial analysis. Integrated six key metrics: destination density, road connectivity, intersection density, land use diversity, slope analysis, and aesthetic features—to assess neighborhood walkability across dissemination areas. 
+Developed a comprehensive walkability index for Kelowna, BC using multi-criteria spatial analysis. Integrated five key metrics- proximity, density, diversity, connectedness, and attractivenessto -to assess  walkability across dissemination areas. 
 
 ---
 
