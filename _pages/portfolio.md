@@ -18,7 +18,7 @@ Developed a walkability index for the City of Kelowna in Python (pandas) and Arc
 ---
 
 ## Maps
-{% include gallery id="page.gallery" %}
+{% include gallery %}
 
 ## Applied GIS: Real-World Spatial Problem Solving
 
