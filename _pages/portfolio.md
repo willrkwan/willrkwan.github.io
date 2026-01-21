@@ -7,8 +7,8 @@ gallery:
   - url: /assets/images/L06Map.png
     image_path: /assets/images/L06Map.png
     alt: "Kelowna Supervised Classification Map"
-  - url: /assets/images/LO4Map.png
-    image_path: /assets/images/LO4Map.png
+  - url: /assets/images/L04Map.png
+    image_path: /assets/images/L04Map.png
     alt: "Photo 2"
 
 ---
