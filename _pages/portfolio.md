@@ -4,7 +4,7 @@ permalink: /portfolio/
 layout: single
 author_profile: true
 gallery:
-- url: /assets/images/l06map.
+- url: /assets/images/L06Map.png
 ---
 
 ## Projects
