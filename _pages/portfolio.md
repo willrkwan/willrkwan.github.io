@@ -3,14 +3,19 @@ title: "Portfolio"
 permalink: /portfolio/
 layout: single
 author_profile: true
+gallery:
+- url: /assets/images/l06map.
 ---
 
 ## Projects
 
 ### [Analyzing Kelowna's Walkability](/kelowna_walkability/)
-Developed a comprehensive walkability index for Kelowna, BC using multi-criteria spatial analysis. Integrated five key metrics- proximity, density, diversity, connectedness, and attractivenessto -to assess  walkability across dissemination areas. 
+Developed a walkability index for the City of Kelowna in Python (pandas) and ArcGIS Pro using multi-criteria spatial analysis. Integrated literature-based metrics (proximity, density, diversity, connectedness, and attractiveness) to assess walkability across dissemination areas. 
 
 ---
+
+## Maps
+{% include gallery id="page.gallery" %}
 
 ## Applied GIS: Real-World Spatial Problem Solving
 
