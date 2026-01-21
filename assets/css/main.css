@@ -5221,5 +5221,9 @@ body {
     height: 1px !important;
   }
 }
+/* Custom styles - Remove rounded corners from gallery images */
+figure img {
+  border-radius: 0 !important;
+}
 
 /*# sourceMappingURL=main.css.map */
