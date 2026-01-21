@@ -23,34 +23,34 @@ Developed a walkability index for the City of Kelowna in Python (pandas) and Arc
 ## Maps
 {% include gallery %}
 
-## Applied GIS: Real-World Spatial Problem Solving
+## Memos for GIS 480: Practical Applications in GIS
 
-Coursework from GIS 480 demonstrating practical applications of spatial analysis techniques across environmental planning, wildlife conservation, and cartographic production.
+Lab work for GIS 480 involved exposure to common GIS workflows, working with incomplete and messy real-world datasets, and minimal guidance. Each lab required interpreting a problem statement, selecting appropriate methods, and communicating results through professional-quality maps and concise technical memos. These exercises reinforced methodological decision-making, data QA/QC, and clear communication of assumptions, limitations, and results.
 
-### Lab 2: Wildlife Corridors Foundation
+### Wildlife Corridors Foundation
 Established baseline spatial datasets for wildlife movement analysis through data preparation and foundational corridor mapping techniques.  
-[View Lab Report](/assets/documents/gis480/lab02.pdf)
+[View Memo](/assets/documents/gis480/lab02.pdf)
 
-### Lab 3: Habitat Suitability Analysis
+### Habitat Suitability Analysis
 Conducted Spatial Ecological Inventory (SEI) analysis using Regional District of Central Okanagan wildlife habitat ratings, quantifying habitat areas by classification type.  
-[View Lab Report](/assets/documents/gis480/lab03.pdf)
+[View Memo](/assets/documents/gis480/lab03.pdf)
 
-### Lab 4: Wildlife Corridor Connectivity
+### Wildlife Corridor Connectivity
 Identified critical wildlife movement corridors through landscape permeability analysis and statistical validation of connectivity zones.  
-[View Lab Report](/assets/documents/gis480/lab04.pdf)
+[View Memo](/assets/documents/gis480/lab04.pdf)
 
-### Lab 5: Coastal Inundation Modeling
+### Coastal Inundation Modeling
 Modeled flood scenarios at multiple elevation thresholds (35m and 350m) to assess potential inundation impacts and compare scenario outcomes.  
-[View Lab Report](/assets/documents/gis480/lab05.pdf)
+[View Memo](/assets/documents/gis480/lab05.pdf)
 
-### Lab 6: Classification Accuracy Assessment
+### Classification Accuracy Assessment
 Validated land cover classifications through error matrix analysis, calculating overall accuracy and producer's/user's accuracy statistics.  
-[View Lab Report](/assets/documents/gis480/lab06.pdf)
+[View Memo](/assets/documents/gis480/lab06.pdf)
 
-### Lab 7: GIS Workflow Automation
+### GIS Workflow Automation
 Designed and documented automated geoprocessing models using ArcGIS Model Builder for walk-time service area analysis, complete with user documentation.  
-[View Lab Report](/assets/documents/gis480/lab07.pdf)
+[View Memo](/assets/documents/gis480/lab07.pdf)
 
-### Lab 8: Cartographic Map Series Production
+### Cartographic Map Series Production
 Created standardized multi-page map products using data-driven pages, demonstrating automated cartographic production workflows.  
-[View Lab Report](/assets/documents/gis480/lab08.pdf)
+[View Memo](/assets/documents/gis480/lab08.pdf)
