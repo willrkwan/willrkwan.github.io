@@ -4,7 +4,10 @@ permalink: /portfolio/
 layout: single
 author_profile: true
 gallery:
-- url: /assets/images/L06Map.png
+  - url: /assets/images/L06Map.png
+    image_path: /assets/images/L06Map.png
+    alt: "Kelowna Map"
+
 ---
 
 ## Projects
