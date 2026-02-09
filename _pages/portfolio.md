@@ -38,3 +38,4 @@ Validated land cover classifications through error matrix analysis, calculating 
 ### Cartographic Map Series Production
 Created standardized multi-page map products using data-driven pages, demonstrating automated cartographic production workflows.  
 [View Memo](/assets/documents/gis480/lab08.pdf)
+[View Figures](/assets/documents/gis480/lab8figures.pdf)
