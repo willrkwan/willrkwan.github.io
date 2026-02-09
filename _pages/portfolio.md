@@ -23,9 +23,9 @@ Developed a walkability index for the City of Kelowna in Python (pandas) and Arc
 ## Maps
 {% include gallery %}
 
-## Memos for GIS 480: Practical Applications in GIS
+## Memos created for GIS 480: Practical Applications in GIS
 
-Lab work for GIS 480 involved exposure to common GIS workflows, working with incomplete and messy real-world datasets, and minimal guidance. Each lab required interpreting a problem statement, selecting appropriate methods, and communicating results through professional-quality maps and concise technical memos. These exercises reinforced methodological decision-making, data QA/QC, and clear communication of assumptions, limitations, and results.
+Lab work for GIS 480 involved utilizing to common GIS workflows, working with incomplete and messy real-world datasets, and minimal external guidance. Each lab required interpreting a problem statement, selecting appropriate methods, and communicating results through professional-quality maps and technical memos. These exercises reinforced methodological decision-making, data QA/QC, and clear communication of assumptions, limitations, and results.
 
 ### Habitat Suitability Analysis
 Conducted Spatial Ecological Inventory (SEI) analysis using Regional District of Central Okanagan wildlife habitat ratings, quantifying habitat areas by classification type. Utilized CAD data, georeferencing.
