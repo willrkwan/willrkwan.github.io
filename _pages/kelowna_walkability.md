@@ -35,10 +35,3 @@ I developed a comprehensive walkability index (0-100) for 175 Kelowna neighborho
 ## Key Insights
 
 My analysis revealed stark disparities in Kelowna's pedestrian infrastructure. Downtown, Pandosy Village, and Midtown scored highest due to excellent amenity access and connectivity, while suburban areas like Wilden and Upper Mission exhibited car-dependence and low connectivity. The mean score of 49.03 (SD: 19.85) highlights uneven development patterns across the city.
-
-## Skills Demonstrated
-
-- **Geospatial Analysis**: GIS-based spatial analysis and visualization
-- **Python Programming**: Data collection, processing, and statistical analysis
-- **Research Methods**: Literature review and methodology design
-- **Technical Writing**: Clear communication of complex spatial analysis for urban planning audiences
