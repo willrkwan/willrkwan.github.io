@@ -5,6 +5,13 @@ layout: single
 author_profile: true
 ---
 
+---
+title: "Analyzing Kelowna's Walkability"
+permalink: /kelowna_walkability/
+layout: single
+author_profile: true
+---
+
 ## Project Overview
 
 I developed a comprehensive walkability index (0-100) for 175 Kelowna neighborhoods by analyzing 1,569 amenities across five key indicators: proximity to amenities, population and amenity density, land use diversity, street connectivity, and terrain characteristics.
@@ -24,8 +31,8 @@ I developed a comprehensive walkability index (0-100) for 175 Kelowna neighborho
 **Spatial Analysis**
 - Applied logistic decay functions to model realistic walking distance preferences
 - Calculated land use diversity using Shannon's Entropy Index
-- Designed weighting scheme for five indicators based on academic literature on pedestrian behavior and urban design
-- Analyzed statistical distribution of scores across neighborhoods
+- Weighted five indicators based on academic literature on pedestrian behavior and urban design
+- Performed statistical validation to ensure index reliability
 
 **Visualization & Communication**
 - Created walkability maps and neighborhood rankings to visualize spatial patterns
