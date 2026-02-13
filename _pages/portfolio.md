@@ -14,7 +14,7 @@ Explore my work applying geospatial analysis, data science, and environmental re
 ### [Kelowna Walkability Analysis](/kelowna_walkability/)
 **Spatial Analysis | Python | ArcGIS Pro**
 
-Developed a comprehensive walkability index for 175 Kelowna neighborhoods using multi-criteria spatial analysis. Integrated five literature-based indicators—proximity, density, diversity, connectivity, and terrain—to assess pedestrian accessibility across the city.
+Developed a comprehensive walkability index for 175 Kelowna neighborhoods using multi-criteria spatial analysis with . Integrated five literature-based indicators—proximity, density, diversity, connectivity, and terrain—to assess pedestrian accessibility across the city.
 
 [View Project](/kelowna_walkability/)
 
@@ -23,7 +23,6 @@ Developed a comprehensive walkability index for 175 Kelowna neighborhoods using 
 ## Technical Maps & Spatial Analysis
 
 ### Kelowna Land Cover Classification
-**Remote Sensing | Accuracy Assessment**
 
 Performed supervised classification of Kelowna land cover using satellite imagery. Validated results through error matrix analysis, calculating overall accuracy and producer's/user's accuracy statistics to assess classification reliability.
 
@@ -34,7 +33,6 @@ Performed supervised classification of Kelowna land cover using satellite imager
 ---
 
 ### Wildlife Habitat Suitability Analysis
-**Ecological GIS | SEI Analysis**
 
 Conducted Spatial Ecological Inventory (SEI) analysis for a road improvement project northwest of Kelowna using wildlife habitat ratings. Quantified habitat areas by classification type, working with CAD data and georeferencing workflows.
 
@@ -45,7 +43,6 @@ Conducted Spatial Ecological Inventory (SEI) analysis for a road improvement pro
 ## Cartographic Production
 
 ### Automated Map Series
-**Data-Driven Pages | Cartographic Design**
 
 Created standardized multi-page map products using data-driven pages in ArcGIS Pro, demonstrating automated cartographic production workflows for professional deliverables.
 
